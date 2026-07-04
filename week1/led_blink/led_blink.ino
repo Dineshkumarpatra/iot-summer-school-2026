@@ -1,4 +1,5 @@
 int blinkCount = 0;
+const int potPin = A0;
 
 void setup() {
   Serial.begin(9600);
@@ -6,13 +7,20 @@ void setup() {
 }
 
 void loop() {
+
+  int value = analogRead(potPin);
+  int blinkDelay = map(value, 0, 1023, 100, 1000);
+
   digitalWrite(13, HIGH);
-  delay(500);
+  delay(blinkDelay);
 
   digitalWrite(13, LOW);
-  delay(500);
+  delay(blinkDelay);
 
   blinkCount++;
+
   Serial.print("Blink count: ");
-  Serial.println(blinkCount);
+  Serial.print(blinkCount);
+  Serial.print(" | Delay: ");
+  Serial.println(blinkDelay);
 }
