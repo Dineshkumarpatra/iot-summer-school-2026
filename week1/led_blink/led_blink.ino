@@ -1,3 +1,10 @@
+/*
+ * Project     : LED Blink
+ * Author      : Dinesh Patra
+ * Date        : 04-07-2026
+ * Description : LED blink with serial counter and potentiometer speed control.
+ */
+
 int blinkCount = 0;
 const int potPin = A0;
 
