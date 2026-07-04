@@ -4,8 +4,6 @@
 
 **Name:** Dinesh Patra
 
-**Roll Number:** YOUR_ROLL_NUMBER
-
 ## Project Description
 
 This repository contains all assignments and hands-on projects completed during the IIT Jammu Summer School 2026 IoT & Embedded Systems Program.
