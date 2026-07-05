@@ -1,30 +1,27 @@
-/*
- * Project : DC Motor Speed Control with L298N
- * Author  : Dinesh Patra
- */
 
-const int ENA = 9;
+
+const int EN1 = 9;      // PWM Enable
 const int IN1 = 8;
 const int IN2 = 7;
 
 const int potPin = A0;
-const int dirButton = 2;
-const int stopButton = 3;
+const int dirBtn = 2;
+const int runBtn = 3;
 
-bool direction = true;
-bool motorRunning = true;
+bool direction = true;      // true = Forward
+bool motorState = true;     // true = Running
 
-bool lastDirButton = HIGH;
-bool lastStopButton = HIGH;
+bool lastDir = HIGH;
+bool lastRun = HIGH;
 
 void setup() {
 
-  pinMode(ENA, OUTPUT);
+  pinMode(EN1, OUTPUT);
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
 
-  pinMode(dirButton, INPUT_PULLUP);
-  pinMode(stopButton, INPUT_PULLUP);
+  pinMode(dirBtn, INPUT_PULLUP);
+  pinMode(runBtn, INPUT_PULLUP);
 
   Serial.begin(9600);
 }
@@ -34,39 +31,43 @@ void loop() {
   int pot = analogRead(potPin);
 
   int pwm = map(pot, 0, 1023, 0, 255);
-  int percent = map(pot, 0, 1023, 0, 100);
+  int speedPercent = map(pot, 0, 1023, 0, 100);
 
-  bool dirState = digitalRead(dirButton);
-  bool stopState = digitalRead(stopButton);
+  bool dir = digitalRead(dirBtn);
+  bool run = digitalRead(runBtn);
 
-  if (dirState == LOW && lastDirButton == HIGH) {
+  // Toggle Direction
+  if (dir == LOW && lastDir == HIGH) {
     direction = !direction;
     delay(200);
   }
 
-  if (stopState == LOW && lastStopButton == HIGH) {
-    motorRunning = !motorRunning;
+  // Toggle Start / Stop
+  if (run == LOW && lastRun == HIGH) {
+    motorState = !motorState;
     delay(200);
   }
 
-  lastDirButton = dirState;
-  lastStopButton = stopState;
+  lastDir = dir;
+  lastRun = run;
 
-  if (motorRunning) {
+  if (motorState) {
 
-    analogWrite(ENA, pwm);
+    analogWrite(EN1, pwm);
 
     if (direction) {
       digitalWrite(IN1, HIGH);
       digitalWrite(IN2, LOW);
-    } else {
+    }
+    else {
       digitalWrite(IN1, LOW);
       digitalWrite(IN2, HIGH);
     }
 
-  } else {
+  }
+  else {
 
-    analogWrite(ENA, 0);
+    analogWrite(EN1, 0);
 
     digitalWrite(IN1, LOW);
     digitalWrite(IN2, LOW);
@@ -80,15 +81,15 @@ void loop() {
     Serial.print("Reverse");
 
   Serial.print(" | Speed : ");
-  Serial.print(percent);
+  Serial.print(speedPercent);
   Serial.print("%");
 
   Serial.print(" | State : ");
 
-  if (motorRunning)
+  if (motorState)
     Serial.println("RUNNING");
   else
     Serial.println("STOPPED");
 
-  delay(200);
+  delay(100);
 }
