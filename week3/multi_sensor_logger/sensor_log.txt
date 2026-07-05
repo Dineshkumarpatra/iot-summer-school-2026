@@ -1,0 +1,126 @@
+=== SENSOR LOG ===
+Time      : 27 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 24% (Dark)
+Distance  : 397.65 cm
+==================
+=== SENSOR LOG ===
+Time      : 5141 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 24% (Dark)
+Distance  : 397.63 cm
+==================
+=== SENSOR LOG ===
+Time      : 10256 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 24% (Dark)
+Distance  : 397.73 cm
+==================
+=== SENSOR LOG ===
+Time      : 15362 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 24% (Dark)
+Distance  : 223.67 cm
+==================
+=== SENSOR LOG ===
+Time      : 20467 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 94% (Bright)
+Distance  : 223.67 cm
+==================
+=== SENSOR LOG ===
+Time      : 25576 ms
+Temp      : 11.80 C | Humidity: 40.00%
+Light     : 94% (Bright)
+Distance  : 223.67 cm
+==================
+=== SENSOR LOG ===
+Time      : 30684 ms
+Temp      : 51.10 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 223.67 cm
+==================
+=== SENSOR LOG ===
+Time      : 35792 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 223.67 cm
+==================
+=== SENSOR LOG ===
+Time      : 40901 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 223.67 cm
+==================
+=== SENSOR LOG ===
+Time      : 46005 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 51108 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 56212 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 156.98 cm
+==================
+=== SENSOR LOG ===
+Time      : 61316 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 66419 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 71523 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 76626 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 81730 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 86835 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 91939 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 97044 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
+=== SENSOR LOG ===
+Time      : 102149 ms
+Temp      : 38.40 C | Humidity: 70.50%
+Light     : 94% (Bright)
+Distance  : 157.08 cm
+==================
